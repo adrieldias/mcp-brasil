@@ -16,7 +16,7 @@ consultar CNPJ sozinho, decidindo quando cada ferramenta é necessária.
 > O agente valida cada número localmente, descarta os inválidos sem consultar a Receita,
 > consulta os válidos e devolve uma tabela com razão social e situação cadastral.
 
-<!-- Coloque aqui um print do agente usando o servidor: docs/demo.png -->
+   ![Agente usando o mcp-brasil no VS Code](docs/demo.png)
 
 ## Ferramentas
 
