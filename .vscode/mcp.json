@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "brasil": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": ["${workspaceFolder}/src/McpBrasil/bin/Debug/net10.0/McpBrasil.dll"]
+    }
+  }
+}

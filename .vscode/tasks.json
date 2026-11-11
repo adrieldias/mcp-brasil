@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "dotnet build src/McpBrasil",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "dotnet test McpBrasil.slnx",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "inspector",
+      "type": "shell",
+      "command": "npx @modelcontextprotocol/inspector dotnet src/McpBrasil/bin/Debug/net10.0/McpBrasil.dll",
+      "dependsOn": "build",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

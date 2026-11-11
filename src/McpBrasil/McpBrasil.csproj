@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>McpBrasil</RootNamespace>
+
+    <!-- Empacotamento como ferramenta .NET (dotnet tool install -g McpBrasil) -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>mcp-brasil</ToolCommandName>
+    <PackageId>McpBrasil</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Adriel Inácio Dias</Authors>
+    <Description>Servidor MCP com ferramentas para sistemas brasileiros: consulta e validação de CNPJ.</Description>
+    <PackageTags>mcp;ai;agents;brasil;cnpj</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageOutputPath>../../nupkg</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol" Version="2.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
